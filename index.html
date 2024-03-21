@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Jefferyi Magtubo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,10 +20,17 @@
                         'lttrbxdGreen': "#00B021",
                         'lttrbxdOrg': "#F27405",
                         'linklnBlue': "#0077B5",
-                        'githubBlack': "#282c34"
+                        'githubBlack': "#282c34",
+                        'lighterBlack': "#1D2127"
                     },
                     fontFamily: {
                         'karla': ["Karla", 'sans-serif']
+                    },
+                    boxShadow: {
+                        'white' : '0 5px 60px -50px rgb(200, 200, 200 / 0.25)'
+                    },
+                    screens: {
+                        'xs' : '320px'
                     }
                 }
             }
@@ -32,19 +39,19 @@
 </head>
 <body class="font-karla text-text bg-lightBlack">
 
-    <header class="bg-darkBlack flex px-4 py-8 justify-center items-center">
+    <header class="bg-darkBlack flex px-4 py-12 justify-center items-center fixed top-0 inset-x-0">
         <div class="flex">
-            <h2 class="mr-4">Projects</h2>
-            <h2>Contact</h2>
+            <h2 class="mr-16 hover:text-white"><a href="#projects">Projects</a></h2>
+            <h2 class="hover:text-white"><a href="#contact">Contact</a></h2>
         </div>
     </header>
 
     <main>
-        <section class="flex my-8 mx-auto w-4/5  justify-between">
-            <div class="flex-col my-auto sm:mr-4">
+        <section class="flex  my-8 mx-auto w-4/5 pt-36 md:pb-8 md:pt-36  justify-between items-center xl:justify-center 2xl:justify-around">
+            <div class="flex-col my-auto sm:mr-4 md:mr-16">
                 <h2 class="text-xs">Hi, my name is</h2>
                 <h1 class="text-white text-5xl">Jefferyi Magtubo</h1>
-                <h2 class="mt-2">Passionate front-end developer eager to use their skills in a professional enviroment.</h2>
+                <h2 class="mt-2">Passionate front-end developer eager to use their skills in a professional enviroments.</h2>
                 <div class="flex flex-wrap mt-2 text-sm">
                     <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">React</p>
                     <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">TypeScript</p>
@@ -57,66 +64,69 @@
                     <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">Git</p>
                 </div>
                 <div class="mt-2 text-xl">
-                    <a href="" target="_blank"><i class="fa-brands fa-linkedin mr-4 hover:text-linklnBlue hover:cursor-pointer"></i></a>
-                    <a href="" target="_blank"><i class="fa-brands fa-github mr-4 hover:text-githubBlack hover:cursor-pointer"></i></a>
-                    <a href="" target="_blank"><i class="fa-solid fa-envelope hover:text-lttrbxdGreen hover:cursor-pointer"></i></a>
+                    <a href="https://www.linkedin.com/in/jefferyi-magtubo-6092111b8/" target="_blank"><i class="fa-brands fa-linkedin mr-4 hover:text-linklnBlue hover:cursor-pointer"></i></a>
+                    <a href="https://github.com/Jefferyi-Magtubo" target="_blank"><i class="fa-brands fa-github mr-4 hover:text-githubBlack hover:cursor-pointer"></i></a>
+                    <a href="mailto:jefferyi.magtubo@gmail.com" target="_blank"><i class="fa-solid fa-envelope hover:text-lttrbxdGreen hover:cursor-pointer"></i></a>
                 </div>
             </div>
-            <img src="jeff.jpg" class="h-96 rounded-full"/>
+            <img src="jeff.jpg" class="h-96 rounded-full xs:hidden sm:block"/>
         </section>
 
-        <section class="bg-darkBlack flex-col p-8 flex items-center">
+        <section id="projects" class="bg-lighterBlack flex-col p-16 py-32 flex items-center">
             <h1 class="text-5xl">Projects</h1>
-            <p class="mt-4">All of my projects are listed below with their respective code and link to its live version.</p>
+            <p class="mt-4 mb-8">All of my projects are listed below with their respective code and link to its live version.</p>
             <div class="flex flex-wrap mt-2 ">
-                <div class="flex flex-col items-center justify-center p-8 border-b lg:w-1/2">
-                    <img src="moveierecsite.PNG" class="w-4/5">
+                <div class="flex flex-col items-center justify-center p-8 lg:w-1/2 hover:shadow-white">
+                    <img src="moveierecsite.PNG" class="w-4/5 xs:hidden sm:block">
                     <h1 class="text-2xl mt-4 underline font-bold ">Movie Recommender</h1>
                     <p>An app that allows users to select a movie they like, pick what they liked about (the director, actors, cinematographer), and get a recommendation that has those selections.</p>
                     <div class="mt-4">
-                        <a href="" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
-                        <a href="" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
+                        <a href="https://jeffsmovierecommender.netlify.app/" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
+                        <a href="https://github.com/Jefferyi-Magtubo/Movie-Recommender" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
                     </div>
                 </div>
-                <div class="flex flex-col items-center justify-center p-8 border-b  lg:w-1/2">
-                    <img src="pic2quiz.PNG" class="w-4/5">
+                <div class="flex flex-col items-center justify-center p-8 lg:w-1/2 hover:shadow-white">
+                    <img src="pic2quiz.PNG" class="w-4/5 xs:hidden sm:block">
                     <h1 class="text-2xl mt-4 underline font-bold ">Trivia App</h1>
                     <p>An app that allows users to select a movie they like, pick what they liked about (the director, actors, cinematographer), and get a recommendation that has those selections.</p>
                     <div class="mt-4">
-                        <a href="" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
-                        <a href="" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
+                        <a href="https://entertainementrivia.netlify.app/" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
+                        <a href="https://github.com/Jefferyi-Magtubo/Entertainment-Trivia" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
                     </div>
                 </div>
-                <div class="flex flex-col items-center justify-center p-8 border-b lg:w-1/2">
-                    <img src="picwatchlist.PNG" class="w-4/5">
+                <div class="flex flex-col items-center justify-center p-8 lg:w-1/2 hover:shadow-white">
+                    <img src="watchlistpic.PNG" class="w-4/5 xs:hidden sm:block">
                     <h1 class="text-2xl mt-4 underline font-bold ">Movie Watchlist</h1>
                     <p>An app that allows users to search and add movies to a watchlist. Made with Vanilla JavaScript, HTML, and CSS.</p>
                     <div class="mt-4">
-                        <a href="" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
-                        <a href="" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
+                        <a href="https://jeffsmoviewatchlist.netlify.app/" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
+                        <a href="https://github.com/Jefferyi-Magtubo/Movie-Watchlist" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
                     </div>
                 </div>
-                <div class="flex flex-col items-center justify-center p-8 border-b lg:w-1/2">
-                    <img src="passwordpic.PNG" class="w-4/5">
+                <div class="flex flex-col items-center justify-center p-8 lg:w-1/2 hover:shadow-white">
+                    <img src="passwordpic.PNG" class="w-4/5 xs:hidden sm:block">
                     <h1 class="text-2xl mt-4 underline font-bold ">Random Password Generator</h1>
-                    <p>An app that allows users to randomly generate passwords. Made with Vanilla JavaScript, HTML, and CSS.</p>
+                    <p>An app that allows users to randomly generate passwords. Made with Vanilla JavaScript, HTML, and CSS. Refactored to use TypeScript.</p>
                     <div class="mt-4">
-                        <a href="" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
-                        <a href="" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
+                        <a href="https://jeffspasswordgenerator.netlify.app/" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
+                        <a href="https://github.com/Jefferyi-Magtubo/Random-Password-Generator" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
                     </div>
                 </div>
             </div>
+            <h1 class="mt-32">This website was made with Tailwind CSS.</h1>
         </section>
 
-        <section>
-            <div>
-                <h1>Contact</h1>
-                <p>Looking to connect? Feel free to reach out to me through email (jefferyi.magtubo@gmail.com) or phone (832-867-6875). I'll get back to you as soon as possible!</p>
-            </div>
+        <section id="contact" class="p-16 py-32">
+
+            <h1 class="text-5xl text-center">Contact</h1>
+            <p class="text-center mt-4 lg:w-1/2 lg:mx-auto">Looking to connect? Feel free to reach out to me through email (jefferyi.magtubo@gmail.com) or phone (832-867-6875). Alternatively, you can message me on LinkedIn <a target="_blank" class="text-white hover:text-gray-500" href="https://www.linkedin.com/in/jefferyi-magtubo-6092111b8/">here</a>. I'll get back to you as soon as possible!</p>
+
         </section>
 
-        <footer>
-
+        <footer class="bg-darkBlack py-12 text-center">
+            <a href="https://www.linkedin.com/in/jefferyi-magtubo-6092111b8/" target="_blank"><i class="fa-brands fa-linkedin mr-4 hover:text-linklnBlue hover:cursor-pointer"></i></a>
+            <a href="https://github.com/Jefferyi-Magtubo" target="_blank"><i class="fa-brands fa-github mr-4 hover:text-githubBlack hover:cursor-pointer"></i></a>
+            <a href="mailto:jefferyi.magtubo@gmail.com" target="_blank"><i class="fa-solid fa-envelope hover:text-lttrbxdGreen hover:cursor-pointer"></i></a>
         </footer>
     </main>
 </body>
