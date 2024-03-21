@@ -32,7 +32,7 @@
 </head>
 <body class="font-karla text-text bg-lightBlack">
 
-    <header class="bg-darkBlack flex px-4 py-8 justify-end items-center">
+    <header class="bg-darkBlack flex px-4 py-8 justify-center items-center">
         <div class="flex">
             <h2 class="mr-4">Projects</h2>
             <h2>Contact</h2>
@@ -41,21 +41,83 @@
 
     <main>
         <section class="flex my-8 mx-auto w-4/5  justify-between">
-            <div class="flex-col my-auto">
-                <h2 class="text-sm">Hi, my name is</h2>
+            <div class="flex-col my-auto sm:mr-4">
+                <h2 class="text-xs">Hi, my name is</h2>
                 <h1 class="text-white text-5xl">Jefferyi Magtubo</h1>
-                <h2 class="mt-2">Passionate front-end developer skilled in React, TypeScript, JS, and Tailwind CSS.</h2>
-                <div class="mt-4 text-xl">
-                    <a><i class="fa-brands fa-linkedin mr-4 hover:text-linklnBlue hover:font-bold hover:ring-yellow-500"></i></a>
-                    <i class="fa-brands fa-github hover:text-githubBlack"></i>
+                <h2 class="mt-2">Passionate front-end developer eager to use their skills in a professional enviroment.</h2>
+                <div class="flex flex-wrap mt-2 text-sm">
+                    <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">React</p>
+                    <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">TypeScript</p>
+                    <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">JavaScript</p>
+                    <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">Tailwind CSS</p>
+                    <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">CSS</p>
+                    <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">HTML</p>
+                    <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">Responsive Design</p>
+                    <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">Figma</p>
+                    <p class="p-1 rounded-md bg-slate-900 mr-2 mb-2">Git</p>
+                </div>
+                <div class="mt-2 text-xl">
+                    <a href="" target="_blank"><i class="fa-brands fa-linkedin mr-4 hover:text-linklnBlue hover:cursor-pointer"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-github mr-4 hover:text-githubBlack hover:cursor-pointer"></i></a>
+                    <a href="" target="_blank"><i class="fa-solid fa-envelope hover:text-lttrbxdGreen hover:cursor-pointer"></i></a>
                 </div>
             </div>
-            <img src="jeff.jpg" class="h-80 rounded-full"/>
+            <img src="jeff.jpg" class="h-96 rounded-full"/>
         </section>
 
-        <section class="bg-darkBlack">
-            <h1>Here</h1>
+        <section class="bg-darkBlack flex-col p-8 flex items-center">
+            <h1 class="text-5xl">Projects</h1>
+            <p class="mt-4">All of my projects are listed below with their respective code and link to its live version.</p>
+            <div class="flex flex-wrap mt-2 ">
+                <div class="flex flex-col items-center justify-center p-8 border-b lg:w-1/2">
+                    <img src="moveierecsite.PNG" class="w-4/5">
+                    <h1 class="text-2xl mt-4 underline font-bold ">Movie Recommender</h1>
+                    <p>An app that allows users to select a movie they like, pick what they liked about (the director, actors, cinematographer), and get a recommendation that has those selections.</p>
+                    <div class="mt-4">
+                        <a href="" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
+                        <a href="" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center p-8 border-b  lg:w-1/2">
+                    <img src="pic2quiz.PNG" class="w-4/5">
+                    <h1 class="text-2xl mt-4 underline font-bold ">Trivia App</h1>
+                    <p>An app that allows users to select a movie they like, pick what they liked about (the director, actors, cinematographer), and get a recommendation that has those selections.</p>
+                    <div class="mt-4">
+                        <a href="" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
+                        <a href="" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center p-8 border-b lg:w-1/2">
+                    <img src="picwatchlist.PNG" class="w-4/5">
+                    <h1 class="text-2xl mt-4 underline font-bold ">Movie Watchlist</h1>
+                    <p>An app that allows users to search and add movies to a watchlist. Made with Vanilla JavaScript, HTML, and CSS.</p>
+                    <div class="mt-4">
+                        <a href="" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
+                        <a href="" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center p-8 border-b lg:w-1/2">
+                    <img src="passwordpic.PNG" class="w-4/5">
+                    <h1 class="text-2xl mt-4 underline font-bold ">Random Password Generator</h1>
+                    <p>An app that allows users to randomly generate passwords. Made with Vanilla JavaScript, HTML, and CSS.</p>
+                    <div class="mt-4">
+                        <a href="" target="_blank" class="inline-block bg-lttrbxdGreen mr-4 text-white font-bold p-1.5 rounded-lg hover:bg-green-700">Live Site</a>
+                        <a href="" target="_blank" class="inline-block bg-lttrbxdOrg text-white font-bold  p-1.5 rounded-lg hover:bg-orange-600">Code</a>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <section>
+            <div>
+                <h1>Contact</h1>
+                <p>Looking to connect? Feel free to reach out to me through email (jefferyi.magtubo@gmail.com) or phone (832-867-6875). I'll get back to you as soon as possible!</p>
+            </div>
+        </section>
+
+        <footer>
+
+        </footer>
     </main>
 </body>
 </html>
