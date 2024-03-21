@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'darkBlack': "#14171C",
+                        'lightBlack': "#2C343F",
+                        'text': "#87B3CC",
+                        'lttrbxdGreen': "#00B021",
+                        'lttrbxdOrg': "#F27405",
+                        'linklnBlue': "#0077B5",
+                        'githubBlack': "#282c34"
+                    },
+                    fontFamily: {
+                        'karla': ["Karla", 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-karla text-text bg-lightBlack">
+
+    <header class="bg-darkBlack flex px-4 py-8 justify-end items-center">
+        <div class="flex">
+            <h2 class="mr-4">Projects</h2>
+            <h2>Contact</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="flex my-8 mx-auto w-4/5  justify-between">
+            <div class="flex-col my-auto">
+                <h2 class="text-sm">Hi, my name is</h2>
+                <h1 class="text-white text-5xl">Jefferyi Magtubo</h1>
+                <h2 class="mt-2">Passionate front-end developer skilled in React, TypeScript, JS, and Tailwind CSS.</h2>
+                <div class="mt-4 text-xl">
+                    <a><i class="fa-brands fa-linkedin mr-4 hover:text-linklnBlue hover:font-bold hover:ring-yellow-500"></i></a>
+                    <i class="fa-brands fa-github hover:text-githubBlack"></i>
+                </div>
+            </div>
+            <img src="jeff.jpg" class="h-80 rounded-full"/>
+        </section>
+
+        <section class="bg-darkBlack">
+            <h1>Here</h1>
+        </section>
+    </main>
+</body>
+</html>
